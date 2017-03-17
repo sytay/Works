@@ -1,0 +1,13 @@
+{
+    "name": "grouph/works",
+    "description": "",
+    "authors": [
+        {
+            "name": "Group H",
+            "email": "GroupH@gmail.com"
+        }
+    ],
+    "require": {
+        "jacopo/laravel-authentication-acl": "1.3.*"
+    }
+}
