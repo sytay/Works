@@ -22,7 +22,7 @@ return [
      * Form
      */
     'form_heading' => 'General data',
-    'form_add' => 'Add new site',
+//    'form_add' => 'Add new site',
     'form_edit' => 'Update site item',
     'name' => 'Name',
     'site_url' => 'Site URL',
@@ -58,6 +58,9 @@ return [
      */
     'tab_overview' => 'Overview',
     'tab_attributes' => 'Attributes',
+    'page_edit'=>"Add new categories",
+    'form_add'=>'Add new categories',
+    'form_heading'=>'Categores',
 
 
     ////////////////////////////////////////////////////////////////////////////
