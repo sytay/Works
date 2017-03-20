@@ -11,6 +11,7 @@ return [
      * Page
      */
 
+    
     'page_list' => 'List of works',
     'page_add' => 'Add new Work',
     'page_edit' => 'Update Work',
