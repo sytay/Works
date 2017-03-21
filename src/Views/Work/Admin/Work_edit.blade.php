@@ -52,14 +52,20 @@ Admin area: {{ trans('work::work_admin.page_edit') }}
                             <div class="tab-content">
                                 <!-- OVERVIEW -->
                                 <div id="home" class="tab-pane fade in active">
-                                    <!-- Work Name TEXT-->
+                                    <!-- SAMPLE NAME TEXT-->
+                                    <!-- WORK  NAME TEXT-->
                                     @include('work::work.elements.text', ['name' => 'work_name'])
-                                    <!-- Work Cateogry SELECT-->
+                                    <!-- /END WORK NAME TEXT -->
+                                    <!-- WORK  CATEGORY SELECT-->
                                     @include('work::work.elements.select', ['name' => 'work_category'])
-                                    <!-- Work Description TEXT -->
+                                    <!-- /END WORK CATEGORY SELECT -->
+                                    <!-- WORK  DESCRIPTION TEXT-->
                                     @include('work::work.elements.text', ['name' => 'work_description'])
-                                    <!-- Work Salary NUMBER-->
-                                    @include('work::work.elements.number', ['name' => 'work_salary'])
+                                    <!-- /END WORK DESCRIPTION TEXT -->
+                                    <!-- WORK  SALARY TEXT-->
+                                    @include('work::work.elements.text', ['name' => 'work_salary'])
+                                    <!-- /END WORK SALARY TEXT -->
+                                    <!-- /END SAMPLE NAME TEXT-->
                                 </div>
                                 <!-- /OVERVIEW -->
 

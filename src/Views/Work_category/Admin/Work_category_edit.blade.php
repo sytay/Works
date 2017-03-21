@@ -43,9 +43,15 @@ Admin area: {{ trans('site:work_category_admin.page_edit') }}
                             <!--END SAMPLE CATEGORIES ID  -->
 
                             <!-- SAMPLE NAME TEXT-->
+                            <!-- CATEGORY NAME TEXT-->
                             @include('work::work_category.elements.text', ['name' => 'category_name'])
+                            <!-- /END CATEGORY NAME TEXT -->
+                            <!-- CATEGORY PARENT SELECT-->
                             @include('work::work_category.elements.select', ['name' => 'category_parent'])
+                            <!-- /END CATEGORY PARENT SELECT-->
+                            <!-- CATEGORY DESCRIPTION TEXT-->
                             @include('work::work_category.elements.text', ['name' => 'category_description'])
+                            <!-- /END CATEGORY DESCRIPTION TEXT-->
                             <!-- /END SAMPLE NAME TEXT -->
                             
                             {!! Form::hidden('id',@$category->category_id) !!}
