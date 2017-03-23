@@ -58,7 +58,7 @@ class works extends Model {
             $work->work_name = $input['work_name'];
             $work->work_category = $input['work_category'];
             $work->work_salary = $input['work_salary'];
-            echo "fdddfsfsfffffff".$input['work_description'];
+            $work->work_description = $input['work_description'];
 
             $work->save();
 
