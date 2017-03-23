@@ -34,6 +34,7 @@ return [
     'work_description'=>'Description',
     'work_salary'=>'Salary',
     'work_category'=>"Category",
+    'work_description'=>"description",
     /**
      * Message
      */
