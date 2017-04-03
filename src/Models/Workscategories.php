@@ -11,7 +11,7 @@ class WorksCategories extends Model {
     protected $fillable = [
         'category_name',
         'category_parent',
-        'category_desciption',
+        'category_description',
         'category_status',
     ];
     protected $primaryKey = 'category_id';
