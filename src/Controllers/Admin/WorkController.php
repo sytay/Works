@@ -165,9 +165,6 @@ class WorkController extends WorkAdminController {
 
         return Redirect::route("admin_work");
     }
-    
-    public function templates($name){
-        return view('work::templates.'.$name);
-    }
+
 
 }

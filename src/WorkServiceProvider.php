@@ -39,7 +39,7 @@ class WorkServiceProvider extends ServiceProvider {
         $this->workViewComposer($request);
 
          $this->publishes([
-                __DIR__.'/../database/migrations/' => database_path('migrations')
+                __DIR__.'/database/migrations/' => database_path('migrations')
             ], 'migrations');
 
     }
@@ -56,6 +56,7 @@ class WorkServiceProvider extends ServiceProvider {
          * Load controllers
          */
         $this->app->make('Works\Controllers\Admin\WorkController');
+//        $this->app->make('Works\Controllers\Admin\TemplatelController');
 
          /**
          * Load Views
