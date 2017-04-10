@@ -8,8 +8,9 @@ use App\Http\Controllers\Controller;
 use URL;
 use Route,
     Redirect;
-use Works\Models\works;
+use Works\Models\Works;
 use Works\Models\WorksCategories;
+use Works\Models\Templates;
 //use Works\Models\WorksCategoryController;
 /**
  * Validators
@@ -22,10 +23,12 @@ class WorkController extends WorkAdminController {
     private $obj_work = NULL;
     private $obj_work_category = NULL;
     private $obj_validator = NULL;
+    public $obj_template = NULL;
 
     public function __construct() {
-        $this->obj_work = new works();
+        $this->obj_work = new Works();
         $this->obj_work_category = new WorksCategories();
+        $this->obj_template = new Templates();
     }
 
     /**
@@ -61,10 +64,12 @@ class WorkController extends WorkAdminController {
         }
 
         $this->obj_work = new works();
+        $templates = $this->obj_template->get_all_template();
 
         $this->data_view = array_merge($this->data_view, array(
             'work' => $work,
-            'request' => $request
+            'request' => $request,
+            'templates' => $templates
         ));
         return view('work::work.admin.work_edit', $this->data_view)
                         ->with('category_parent', $this->obj_work_category->get_categories_parent(0));
@@ -165,6 +170,5 @@ class WorkController extends WorkAdminController {
 
         return Redirect::route("admin_work");
     }
-
 
 }

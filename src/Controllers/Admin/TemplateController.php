@@ -17,8 +17,8 @@ class TemplateController extends WorkAdminController {
         $this->obj_template = new templates();
     }
 
-    public function templates($name) {
-        $template = $this->obj_template->get_template($name);
+    public function templates($id) {
+        $template = $this->obj_template->get_template($id);
         return $template;
     }
 

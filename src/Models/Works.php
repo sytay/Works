@@ -5,7 +5,7 @@ namespace Works\Models;
 use Illuminate\Database\Eloquent\Model;
 use Works\Models\WorksCategories;
 
-class works extends Model {
+class Works extends Model {
 
     
     protected $table = 'works';

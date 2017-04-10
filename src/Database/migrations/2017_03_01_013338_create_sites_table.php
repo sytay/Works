@@ -71,8 +71,7 @@ class CreateSitesTable extends Migration {
         //status_id
         if (!Schema::hasColumn($this->_table, 'site_status')) {
             Schema::table($this->_table, function (Blueprint $table) {
-                $table->integer('site_status');
-                $table->default(0);
+                $table->integer('site_status')->default(0);
             });
         }
     }

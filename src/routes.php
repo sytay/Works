@@ -82,7 +82,7 @@ Route::group(['middleware' => ['web']], function () {
             'uses' => 'Works\Controllers\Admin\WorkController@delete'
         ]);
 
-        Route::get('admin/work/templates/{name}', [
+        Route::get('admin/work/templates/{id}', [
             'as' => 'work_template',
             'uses' => 'Works\Controllers\Admin\TemplateController@templates'
         ]);

@@ -16,8 +16,13 @@ class Templates extends Model
     ];
     protected $primaryKey = 'template_id';
     
-    public function get_template($name) {
-        $template = self::where('template_name', $name)->get();
+    public function get_template($id) {
+        $template = self::where('template_id', $id)->get();
         return $template[0]->template_content;
+    }
+    
+    public function get_all_template() {
+        $template = self::get();
+        return $template;
     }
 }
