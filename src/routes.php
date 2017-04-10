@@ -86,5 +86,10 @@ Route::group(['middleware' => ['web']], function () {
             'as' => 'work_template',
             'uses' => 'Works\Controllers\Admin\TemplateController@templates'
         ]);
+        
+        Route::get('admin/work/templates', [
+            'as' => 'work_template.list',
+            'uses' => 'Works\Controllers\Admin\TemplateController@index'
+        ]);
     });
 });

@@ -21,5 +21,11 @@ class TemplateController extends WorkAdminController {
         $template = $this->obj_template->get_template($id);
         return $template;
     }
+    
+    public function index(){
+        $templates = $this->obj_template->get_all_template();
+        
+        return view('work::work.admin.template')->with('templates', $templates);
+    }
 
 }
