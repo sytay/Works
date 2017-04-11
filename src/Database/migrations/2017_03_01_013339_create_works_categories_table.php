@@ -56,7 +56,7 @@ class CreateWorksCategoriesTable extends Migration {
         //category_description
         if (!Schema::hasColumn($this->_table, 'category_desciption')) {
             Schema::table($this->_table, function (Blueprint $table) {
-                $table->string('category_desciption', 255);
+                $table->string('category_description', 255)->nullable();
             });
         }
         

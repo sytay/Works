@@ -62,7 +62,7 @@ class CreateWorksTable extends Migration {
         
         if (!Schema::hasColumn($this->_table, 'work_description')) {
             Schema::table($this->_table, function (Blueprint $table) {
-                $table->string('work_description')->null(true);
+                $table->string('work_description')->nullable();
             });
         }
         
